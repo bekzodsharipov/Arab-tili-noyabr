@@ -1,15 +1,303 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>9-10 sentabr</title>
-    <style>* {padding: 0;margin: 0;box-sizing: border-box;}body {font-family: sans-serif;background-color: #EFEFEF;position: relative;min-height: 100vh;}.mobile-event-header {padding: 0 17px;}.mobile-event-container {max-width: 500px;width: 100%;display: flex;align-items: center;justify-content: space-between;padding: 24px 32px;background-color: #fff;box-shadow: 0px 4px 6.6px 0px #00000026;border-radius: 4px 4px 20px 20px;margin: 0 auto 36px;}.mobile-event-info {display: flex;align-items: center;gap: 8px;}.mobile-event-date {color: black;font-size: 20px;font-weight: 600;line-height: 100%;}.mobile-event-time {color: #f7a815;font-weight: 700;font-size: 24px;line-height: 100%;}.mobile-main-content {text-align: center;}.mobile-content-wrapper {width: 100%;padding: 0 27px;}.mobile__main-heading {margin-bottom: 8px;font-weight: 600;font-size: 14px;line-height: 19px;span {color: #f7a815;}}.mobile-main-title {font-family: Bebas neue, sans-serif;color: black;font-weight: 700;line-height: 95%;font-size: 20px;max-width: 400px;margin: 0 auto 6px;text-transform: uppercase;span {color: #f7a815;}}.mobile-content-img {display: flex;flex-direction: column;}.mobile-hero-image {display: inline-flex;max-width: 250px;height: auto;width: 100%;margin: 0 auto;position: relative;z-index: 1;}.mobile-cta-button {max-width: 345px;width: 100%;padding: 17px 20px;background: linear-gradient(90deg, #FFC65A 0%, #FFE8BC 42.79%, #FFE8BC 56.25%, #FFC65A 100%);box-shadow: 0px 5px 0px 0px rgba(199, 130, 0, 1);font-size: 18px;font-weight: 700;text-transform: uppercase;border: none;outline: none;color: black;border-radius: 20px;margin: 0 auto 20px !important;cursor: pointer;position: relative;z-index: 2;}.mobile-bonus-section {text-align: left;display: flex;align-items: center;gap: 6px;padding: 2px 14px;background-color: #fff;border: 1px solid #BCBCBC;border-radius: 10px;margin-bottom: 18px;}.mobile-bonus-text {color: black;font-size: 11px;line-height: 180%;}.mobile-bonus-text .highlight {font-weight: 500;}.mobile-masterclass-title {color: black;font-weight: 600;font-size: 17px;line-height: 100%;margin-bottom: 10px;text-transform: uppercase;}.mobile-benefits-list {list-style: none;display: flex;flex-direction: column;gap: 18px;margin-bottom: 20px;max-width: 400px;}.mobile-benefit-item {text-align: left;display: flex;align-items: center;gap: 6px;span {font-weight: 700;}}.mobile-benefit-text {color: black;font-size: 14px;line-height: 1.4;span{color: #f7a815;}}.mobile-main-content {padding-bottom: 58px;}.mobile-hero-shadow {position: absolute;width: 176px;height: 180px;top: 30%;left: 50%;transform: translate(-50%, -50%);background: linear-gradient(141.42deg, #f7a815 13.97%, #D9E0EE 36.56%, #f7a815 54.64%, #ADC8FF 78.05%, #f7a815 99.41%);filter: blur(80px);border-radius: 50%;z-index: 0;}@media (max-width: 525px) {.mobile-main-title {font-size: 20px;max-width: 370px;}.mobile-cta-button {font-size: 18px;}}@media (max-width: 500px) {.mobile-hero-image {max-width: 250px;width: 100%;margin-bottom: -10px;}}@media (min-width: 570px) {.mobile-cta-button {max-width: 400px;width: 100%;margin: 0 auto 11px;}.mobile-bonus-section {max-width: 400px;width: 100%;margin: 0 auto 18px;}.mobile-masterclass-info {max-width: 400px;width: 100%;margin: 0 auto;}}@media (max-width: 439px) {.mobile-event-date {font-size: 16px;}.mobile-event-time {font-size: 18px;}.mobile-benefits-list {display: flex;flex-direction: column;gap: 10px;}.mobile-bonus-text {font-size: 10px;}.mobile-event-container {padding: 14px 32px;margin-bottom: 15px;}.mobile-main-title {font-size: 17px;}.mobile-cta-button{font-size: 16px;}}@media(max-width:351px) {.mobile-main-title {font-size: 16px;}.mobile-benefit-text, .mobile__main-heading{font-size: 12px;}.mobile-cta-button{font-size: 14px;}}</style>
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: sans-serif;
+            background-color: #EFEFEF;
+            position: relative;
+            min-height: 100vh;
+        }
+
+        .mobile-event-header {
+            padding: 0 17px;
+        }
+
+        .mobile-event-container {
+            max-width: 500px;
+            width: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 24px 32px;
+            background-color: #fff;
+            box-shadow: 0px 4px 6.6px 0px #00000026;
+            border-radius: 4px 4px 20px 20px;
+            margin: 0 auto 36px;
+        }
+
+        .mobile-event-info {
+            display: flex;
+            align-items: center;
+            gap: 8px;
+        }
+
+        .mobile-event-date {
+            color: black;
+            font-size: 20px;
+            font-weight: 600;
+            line-height: 100%;
+        }
+
+        .mobile-event-time {
+            color: #841ebf;
+            font-weight: 700;
+            font-size: 24px;
+            line-height: 100%;
+        }
+
+        .mobile-main-content {
+            text-align: center;
+        }
+
+        .mobile-content-wrapper {
+            width: 100%;
+            padding: 0 27px;
+        }
+
+        .mobile__main-heading {
+            margin-bottom: 8px;
+            font-weight: 600;
+            font-size: 14px;
+            line-height: 19px;
+
+            span {
+                color: #841ebf;
+            }
+        }
+
+        .mobile-main-title {
+            font-family: Bebas neue, sans-serif;
+            color: black;
+            font-weight: 700;
+            line-height: 95%;
+            font-size: 20px;
+            max-width: 400px;
+            margin: 0 auto 6px;
+            text-transform: uppercase;
+            position: relative;
+            z-index: 1;
+
+            span {
+                color: #841ebf;
+            }
+        }
+
+        .mobile-content-img {
+            display: flex;
+            flex-direction: column;
+        }
+
+        .mobile-hero-image {
+            display: inline-flex;
+            max-width: 250px;
+            height: auto;
+            width: 100%;
+            margin: 0 auto;
+            position: relative;
+            z-index: 1;
+        }
+
+        .mobile-cta-button {
+            max-width: 345px;
+            width: 100%;
+            padding: 17px 20px;
+            background-color: #841ebf;
+            box-shadow: 0px 5px 0px 0px rgba(87, 0, 138, 1);
+            font-size: 18px;
+            font-weight: 700;
+            text-transform: uppercase;
+            border: none;
+            outline: none;
+            color: white;
+            border-radius: 20px;
+            margin: 0 auto 20px !important;
+            cursor: pointer;
+            position: relative;
+            z-index: 2;
+        }
+
+        .mobile-bonus-section {
+            text-align: left;
+            display: flex;
+            align-items: center;
+            gap: 6px;
+            padding: 2px 14px;
+            background-color: #fff;
+            border: 1px solid #BCBCBC;
+            border-radius: 10px;
+            margin-bottom: 18px;
+        }
+
+        .mobile-bonus-text {
+            color: black;
+            font-size: 11px;
+            line-height: 180%;
+        }
+
+        .mobile-bonus-text .highlight {
+            font-weight: 500;
+        }
+
+        .mobile-masterclass-title {
+            color: black;
+            font-weight: 500;
+            font-size: 17px;
+            line-height: 100%;
+            margin-bottom: 10px;
+            text-transform: uppercase;
+        }
+
+        .mobile-benefits-list {
+            list-style: none;
+            display: flex;
+            flex-direction: column;
+            gap: 18px;
+            margin-bottom: 20px;
+            max-width: 400px;
+        }
+
+        .mobile-benefit-item {
+            text-align: left;
+            display: flex;
+            align-items: center;
+            gap: 6px;
+
+            span {
+                font-weight: 700;
+            }
+        }
+
+        .mobile-benefit-text {
+            color: black;
+            font-size: 14px;
+            line-height: 1.4;
+
+            span {
+                color: #841ebf;
+            }
+        }
+
+        .mobile-main-content {
+            padding-bottom: 58px;
+        }
+
+        .mobile-hero-shadow {
+            position: absolute;
+            width: 176px;
+            height: 180px;
+            top: 30%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            background: linear-gradient(141.42deg, #841ebf 13.97%, #D9E0EE 36.56%, #841ebf 54.64%, #ADC8FF 78.05%, #841ebf 99.41%);
+            filter: blur(80px);
+            border-radius: 50%;
+            z-index: 0;
+        }
+
+        @media (max-width: 525px) {
+            .mobile-main-title {
+                font-size: 20px;
+                max-width: 370px;
+            }
+
+            .mobile-cta-button {
+                font-size: 18px;
+            }
+        }
+
+        @media (max-width: 500px) {
+            .mobile-hero-image {
+                max-width: 250px;
+                width: 100%;
+                margin-bottom: -10px;
+            }
+        }
+
+        @media (min-width: 570px) {
+            .mobile-cta-button {
+                max-width: 400px;
+                width: 100%;
+                margin: 0 auto 11px;
+            }
+
+            .mobile-bonus-section {
+                max-width: 400px;
+                width: 100%;
+                margin: 0 auto 18px;
+            }
+
+            .mobile-masterclass-info {
+                max-width: 400px;
+                width: 100%;
+                margin: 0 auto;
+            }
+        }
+
+        @media (max-width: 439px) {
+            .mobile-event-date {
+                font-size: 16px;
+            }
+
+            .mobile-event-time {
+                font-size: 18px;
+            }
+
+            .mobile-benefits-list {
+                display: flex;
+                flex-direction: column;
+                gap: 10px;
+            }
+
+            .mobile-bonus-text {
+                font-size: 10px;
+            }
+
+            .mobile-event-container {
+                padding: 14px 32px;
+                margin-bottom: 15px;
+            }
+
+            .mobile-main-title {
+                font-size: 17px;
+            }
+
+            .mobile-cta-button {
+                font-size: 16px;
+            }
+        }
+
+        @media(max-width:351px) {
+            .mobile-main-title {
+                font-size: 16px;
+            }
+
+            .mobile-benefit-text,
+            .mobile__main-heading {
+                font-size: 12px;
+            }
+
+            .mobile-cta-button {
+                font-size: 14px;
+            }
+        }
+    </style>
     <link rel="stylesheet" href="./css/modal.css" media="print" onload="this.media='all'" />
     <noscript>
         <link rel="stylesheet" href="./css/modal.css" />
     </noscript>
 </head>
+
 <body>
     <div class="mobile-event-header">
         <div class="mobile-event-container">
@@ -23,7 +311,7 @@
     <section class="mobile-main-content">
         <div class="mobile-content-wrapper">
             <p class="mobile__main-heading">Parizod Yusupovadan <span>bepul</span> master klass</p>
-            <h1 class="mobile-main-title">Bu yangi usul orqali o'quvchim koreys tilida <span>1 oyda 0 dan</span> gapirishni boshladi. <span>Yangi usulni siz ham o'rganing</span></h1>
+            <h1 class="mobile-main-title">Bu usul orqali o'quvchim koreys tilida <span>1 oyda 0 dan</span> gapirishni boshladi. Yangi usulni siz ham o'rganing</h1>
             <div class="mobile-content-img">
                 <div class="mobile-hero-shadow"></div>
                 <img src="./img/mentor-mobile.avif" width="250" height="310" alt="Hero" class="mobile-hero-image">
@@ -34,15 +322,18 @@
                 <ul class="mobile-benefits-list">
                     <li class="mobile-benefit-item">
                         <img src="./img/verify.avif" width="32" height="32" alt="verify" loading="lazy">
-                        <p class="mobile-benefit-text">1 oyda oson va qiziqarli o'rganish orqali koreys tilida <span>o'zingiz xohlagandek</span> gapirishni boshlashni</p>
+                        <p class="mobile-benefit-text">1 oyda oson va qiziqarli o'rganish orqali koreys tilida
+                            <span>o'zingiz xohlagandek</span> gapirishni boshlashni</p>
                     </li>
                     <li class="mobile-benefit-item">
                         <img src="./img/verify.avif" width="32" height="32" alt="verify" loading="lazy">
-                        <p class="mobile-benefit-text">Koreys tilida so'zlarni tez va oson yod olishning 3 ta TOP usuli orqali hozirgidan <span>5 baravar tezroq</span> so'zlarni eslab qolishni</p>
+                        <p class="mobile-benefit-text">Koreys tilida so'zlarni tez va oson yod olishning 3 ta TOP usuli
+                            orqali hozirgidan <span>5 baravar tezroq</span> so'zlarni eslab qolishni</p>
                     </li>
                     <li class="mobile-benefit-item">
                         <img src="./img/verify.avif" width="32" height="32" alt="verify" loading="lazy">
-                        <p class="mobile-benefit-text">Koreys tilidagi so'zlarni eshitish orqali 1 oy ichida <span>koreys doramalarini</span> erkin tushunishni o’rganamiz</p>
+                        <p class="mobile-benefit-text">Koreys tilidagi so'zlarni eshitish orqali 1 oy ichida
+                            <span>koreys doramalarini</span> erkin tushunishni o’rganamiz</p>
                     </li>
                 </ul>
             </div>
@@ -101,4 +392,5 @@
     </div>
     <script defer src="./js/app.js"></script>
 </body>
+
 </html>
