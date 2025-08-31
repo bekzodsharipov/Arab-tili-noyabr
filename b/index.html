@@ -1,0 +1,378 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>9-10 sentabr</title>
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: sans-serif;
+            background-color: #EFEFEF;
+            position: relative;
+            min-height: 100vh;
+        }
+
+        .mobile-event-header {
+            padding: 0 17px;
+        }
+
+        .mobile-event-container {
+            max-width: 500px;
+            width: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 24px 32px;
+            background-color: #fff;
+            box-shadow: 0px 4px 6.6px 0px #00000026;
+            border-radius: 4px 4px 20px 20px;
+            margin: 0 auto 36px;
+        }
+
+        .mobile-event-info {
+            display: flex;
+            align-items: center;
+            gap: 8px;
+        }
+
+        .mobile-event-date {
+            color: black;
+            font-size: 20px;
+            font-weight: 600;
+            line-height: 100%;
+        }
+
+        .mobile-event-time {
+            color: #ff4d00;
+            font-weight: 700;
+            font-size: 24px;
+            line-height: 100%;
+        }
+
+        .mobile-main-content {
+            text-align: center;
+        }
+
+        .mobile-content-wrapper {
+            width: 100%;
+            padding: 0 27px;
+        }
+
+        .mobile__main-heading {
+            margin-bottom: 8px;
+            font-weight: 600;
+            font-size: 14px;
+            line-height: 19px;
+
+            span {
+                color: #ff4d00;
+            }
+        }
+
+        .mobile-main-title {
+            font-family: Bebas neue, sans-serif;
+            color: black;
+            font-weight: 700;
+            line-height: 95%;
+            font-size: 24px;
+            max-width: 400px;
+            margin: 0 auto 6px;
+            text-transform: uppercase;
+
+            span {
+                color: #ff4d00;
+            }
+        }
+
+        .mobile-content-img {
+            display: flex;
+            flex-direction: column;
+        }
+
+        .mobile-hero-image {
+            display: inline-flex;
+            max-width: 310px;
+            height: auto;
+            width: 100%;
+            margin: 0 auto;
+            position: relative;
+            z-index: 1;
+        }
+
+        .mobile-cta-button {
+            max-width: 345px;
+            width: 100%;
+            padding: 17px 20px;
+            background-color: #ff2323;
+            box-shadow: 0px 2px 0px 0px rgba(255, 149, 149, 0.08);
+            font-size: 18px;
+            font-weight: 700;
+            text-transform: uppercase;
+            border: none;
+            outline: none;
+            color: white;
+            border-radius: 12.12px;
+            margin: -36px auto 20px !important;
+            cursor: pointer;
+            position: relative;
+            z-index: 2;
+        }
+
+        .mobile-bonus-section {
+            text-align: left;
+            display: flex;
+            align-items: center;
+            gap: 6px;
+            padding: 2px 14px;
+            background-color: #fff;
+            border: 1px solid #BCBCBC;
+            border-radius: 10px;
+            margin-bottom: 18px;
+        }
+
+        .mobile-bonus-text {
+            color: black;
+            font-size: 11px;
+            line-height: 180%;
+        }
+
+        .mobile-bonus-text .highlight {
+            font-weight: 500;
+        }
+
+        .mobile-masterclass-title {
+            color: black;
+            font-weight: 400;
+            font-size: 17px;
+            line-height: 100%;
+            margin-bottom: 10px;
+            text-align: left;
+            text-transform: uppercase;
+        }
+
+        .mobile-benefits-list {
+            list-style: none;
+            display: flex;
+            flex-direction: column;
+            gap: 18px;
+            margin-bottom: 35px;
+            max-width: 400px;
+        }
+
+        .mobile-benefit-item {
+            text-align: left;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+
+            span {
+                font-weight: 700;
+            }
+        }
+
+        .mobile-benefit-text {
+            color: black;
+            font-size: 14px;
+            line-height: 1.4;
+
+            span {
+                color: #ff4d00;
+            }
+        }
+
+        .mobile-main-content {
+            padding-bottom: 58px;
+        }
+
+        @media (max-width: 525px) {
+            .mobile-main-title {
+                font-size: 20px;
+                max-width: 370px;
+            }
+
+            .mobile-cta-button {
+                font-size: 18px;
+            }
+        }
+
+        @media (max-width: 500px) {
+            .mobile-hero-image {
+                max-width: 310px;
+                width: 100%;
+                margin-bottom: -10px;
+            }
+        }
+
+        @media (min-width: 570px) {
+            .mobile-cta-button {
+                max-width: 400px;
+                width: 100%;
+                margin: 0 auto 11px;
+            }
+
+            .mobile-bonus-section {
+                max-width: 400px;
+                width: 100%;
+                margin: 0 auto 18px;
+            }
+
+            .mobile-masterclass-info {
+                max-width: 400px;
+                width: 100%;
+                margin: 0 auto;
+            }
+        }
+
+        @media (max-width: 439px) {
+            .mobile-event-date {
+                font-size: 16px;
+            }
+
+            .mobile-event-time {
+                font-size: 18px;
+            }
+
+            .mobile-benefits-list {
+                display: flex;
+                flex-direction: column;
+                gap: 10px;
+            }
+
+            .mobile-bonus-text {
+                font-size: 10px;
+            }
+
+            .mobile-event-container {
+                padding: 14px 32px;
+                margin-bottom: 15px;
+            }
+
+            .mobile-main-title {
+                font-size: 17px;
+            }
+
+            .mobile-cta-button {
+                font-size: 16px;
+            }
+        }
+
+        @media(max-width:351px) {
+            .mobile-main-title {
+                font-size: 16px;
+            }
+
+            .mobile-benefit-text,
+            .mobile__main-heading {
+                font-size: 12px;
+            }
+
+            .mobile-cta-button {
+                font-size: 14px;
+            }
+        }
+    </style>
+    <link rel="stylesheet" href="./css/modal.css" media="print" onload="this.media='all'" />
+    <noscript>
+        <link rel="stylesheet" href="./css/modal.css" />
+    </noscript>
+</head>
+
+<body>
+    <div class="mobile-event-header">
+        <div class="mobile-event-container">
+            <div class="mobile-event-info">
+                <img src="./img/calendar.avif" alt="calendar" width="24" height="24" loading="lazy">
+                <p class="mobile-event-date">9-10 sentabr</p>
+            </div>
+            <p class="mobile-event-time">20:00</p>
+        </div>
+    </div>
+    <section class="mobile-main-content">
+        <div class="mobile-content-wrapper">
+            <p class="mobile__main-heading">Parizod Yusupovadan <span>BEPUL</span> master klass</p>
+            <h1 class="mobile-main-title"><span>2 kun ichida</span> koreys tilida gapirish, tinglab tushunish va grammatikani <span>1 oyda o'zlashtirish sirlari</span></h1>
+            <div class="mobile-content-img">
+                <img src="./img/mentor-mobile.avif" width="310" height="402" alt="Hero" class="mobile-hero-image">
+                <button class="mobile-cta-button registerBtn"> Vebinarga qatnashish </button>
+            </div>
+            <div class="mobile-masterclass-info">
+                <h2 class="mobile-masterclass-title">MASTERKLASDA siz:</h2>
+                <ul class="mobile-benefits-list">
+                    <li class="mobile-benefit-item">
+                        <img src="./img/verify.avif" width="32" height="32" alt="verify" loading="lazy">
+                        <p class="mobile-benefit-text"> <span>Qanday qilib koreys tilini o'rganishda</span> dangasalikdan qutilish sirlarini</p>
+                    </li>
+                    <li class="mobile-benefit-item">
+                        <img src="./img/verify.avif" width="32" height="32" alt="verify" loading="lazy">
+                        <p class="mobile-benefit-text"> <span>Vaqtingizni to'g'ri boshqarib</span> 1 oydayoq koreys tilida gapirishni boshlashni</p>
+                    </li>
+                    <li class="mobile-benefit-item">
+                        <img src="./img/verify.avif" width="32" height="32" alt="verify" loading="lazy">
+                        <p class="mobile-benefit-text"> <span>Hayotda o'z o'rningizni topib, koreys tili</span> orqali koreya universitetlariga kirish va daromadingizni oshirish usullarini o'rganasiz</p>
+                    </li>
+                </ul>
+            </div>
+            <button class="mobile-cta-button registerBtn"> Vebinarga qatnashish </button>
+        </div>
+    </section>
+    <div id="registrationModal" class="homeModal" style="display: none">
+        <div class="homeModalOverlay"></div>
+        <div class="homeFormContainer">
+            <button class="closeButton" id="closeModalBtn">
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 12 12" fill="none">
+                    <path d="M1 11L11 1M1 1.00001L11 11" stroke="currentColor" stroke-width="1.5"
+                        stroke-linecap="round" />
+                </svg>
+            </button>
+            <div class="homeFormTop">
+                <h1 class="homeFormTopTitle">
+                    MASTERKLASSGA <br />
+                    RO'YXATDAN O'TISH
+                </h1>
+            </div>
+            <form id="registrationForm" name="contact-form">
+                <div class="HomeFormRow">
+                    <label class="HomeFormRowLabel" for="name">Ismingizni kiriting:</label>
+                    <input class="HomeFormRowInput" type="text" id="name" name="name" autocomplete="name" />
+                    <p class="homeFormErrorText" id="nameError" style="display: none">
+                        Iltimos, ismingizni kiriting
+                    </p>
+                </div>
+                <div class="HomeFormRow">
+                    <label class="HomeFormRowLabel" for="phone">Telefon raqamingiz:</label>
+                    <div class="phone-input-container">
+                        <div class="country-selector">
+                            <div class="selected-country" id="selectedCountry">
+                                <span id="selectedCountryCode">+998</span>
+                                <svg id="dropdownIcon" xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                                    viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                                    stroke-linecap="round" stroke-linejoin="round">
+                                    <polyline points="6 9 12 15 18 9"></polyline>
+                                </svg>
+                            </div>
+                            <div class="country-dropdown" id="countryDropdown" style="display: none"></div>
+                        </div>
+                        <input class="HomeFormRowInput" type="tel" id="phone" name="phone" placeholder="88 888 88 88"
+                            autocomplete="tel" />
+                    </div>
+                    <p class="homeFormErrorText" id="phoneError" style="display: none">
+                        ❌ Telefon raqam mos emas!
+                    </p>
+                </div>
+                <button type="submit" class="HomeFormBtn" id="submitBtn">
+                    Ro'yxatdan o'tish
+                </button>
+            </form>
+        </div>
+    </div>
+    <script defer src="./js/app.js"></script>
+</body>
+
+</html>
