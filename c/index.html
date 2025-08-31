@@ -26,12 +26,14 @@
       font-size: 40px;
       line-height: 110%;
     }
-    .hero__heading{
+
+    .hero__heading {
       color: black;
       font-size: 14px;
       line-height: 130%;
       margin-bottom: 8px;
-      span{
+
+      span {
         color: #01aaff;
         font-weight: 600;
       }
@@ -129,7 +131,7 @@
       line-height: 110%;
       max-width: 700px;
       font-weight: 900;
-      margin-bottom: 5px;
+      margin-bottom: 12px;
 
       span {
         color: #01aaff;
@@ -163,7 +165,10 @@
       justify-content: center;
       max-width: 430px;
       width: 100%;
-      background-color: #01aaff;
+      background: linear-gradient(91.02deg, #01AAFF 0.87%, #1C9DDF 33.98%, #48ACDF 53.45%, #2498D3 78.77%, #159DE2 98.24%),
+        linear-gradient(91.02deg, #01AAFF 0.87%, #1C9DDF 33.98%, #48ACDF 53.45%, #2498D3 78.77%, #159DE2 98.24%);
+      box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.16) inset,
+        0px 2px 2px 0px rgba(0, 0, 0, 0.16);
       border-radius: 30px;
       font-weight: 700;
       font-size: 25px;
@@ -314,7 +319,7 @@
         width: 100%;
         margin: 0 auto 9px;
         font-weight: 700;
-        margin-bottom: 3px;
+        margin-bottom: 13px;
         font-size: 30px;
       }
 
@@ -339,7 +344,7 @@
       .hero__left_bottom {
         display: flex;
         flex-direction: column-reverse;
-        margin-top: 25px;
+        margin-top: -60px;
         position: relative;
         z-index: 30;
       }
@@ -554,7 +559,7 @@
       }
 
       .description__col {
-        padding: 20px 12px 9px;
+        padding: 20px 23px 9px;
       }
 
       .description__col-text {
@@ -804,7 +809,7 @@
       <div class="hero__left">
         <div class="hero__top" aria-hidden="true">
           <div class="hero__top-min">
-            <img src="./images/calendar.svg" alt="Kalendar belgisi" class="calendar__img" width="32" height="33"
+            <img src="./images/calendar.avif" alt="Kalendar belgisi" class="calendar__img" width="24" height="24"
               loading="lazy" />
             <div>
               <p class="hero__top-date">9-sentabr</p>
@@ -813,9 +818,11 @@
           <h4 class="hero__top-time">20:00</h4>
         </div>
         <p class="hero__heading">Parizod Yusupovadan <span>BEPUL</span> masterklass</p>
-        <h1 class="hero__title"><span>2 kun ichida</span> koreys tilidagi istalgan matnlarni noldan erkin o'qish va gapira olish sirlarini o'rganing</h1>
+        <h1 class="hero__title"><span>2 kun ichida</span> koreys tilidagi istalgan matnlarni noldan erkin o'qish va
+          gapira olish sirlarini o'rganing</h1>
         <div class="hero__center">
-          <img width="296" height="402" loading="lazy" class="speakerImg" src="./images/speaker.avif" alt="Parizod Yusupova" />
+          <img width="296" height="402" loading="lazy" class="speakerImg" src="./images/speaker.avif"
+            alt="Parizod Yusupova" />
         </div>
         <div class="hero__left_bottom">
           <div class="hero__btn-box">
@@ -829,25 +836,24 @@
   </section>
   <div class="description">
     <div class="description__container">
-      <h2 class="description__title">3 kunlik <span>BEPUL</span> darsimda siz:</h2>
+      <h2 class="description__title">2 kunlik <span>BEPUL</span> darsimda siz:</h2>
       <div class="description__row">
         <div class="description__col">
           <h3 class="description__col-number only_mobile">01</h3>
           <p class="description__col-text">
-            Murakkab grammatikalarsiz <span>oson</span> metodikada ingliz tilini o’rganishning aniq strategiyasini
+            <span>Qanday qilib 1 oy ichida</span> koreys tilida bemalol o'qish va gapirish qadamlarini bilib olasiz
           </p>
         </div>
         <div class="description__col">
           <h3 class="description__col-number only_mobile">02</h3>
           <p class="description__col-text">
-            1-darsdanoq inglizcha gapirishizga yordam beradigan <span>5 ta</span> texnikani
-
+           <span>Qanday qilib Dangasalikni yengib</span> har kuni intizom bilan shug'ullanish sirlarini o'rganasiz
           </p>
         </div>
         <div class="description__col">
           <h3 class="description__col-number only_mobile">03</h3>
           <p class="description__col-text">
-            Uyalmay, qo’rqmay, to’xatamay inglizcha gapirish uchun maxsus <span>videodarslarni</span> beraman.
+            Qanday qilib koreys tilidagi so'zlarni eshitish orqali <span>1 oy ichida koreys doramalarini erkin tushunishning</span> sinalgan usullarini o'rganamiz
           </p>
         </div>
       </div>
@@ -908,4 +914,5 @@
   </div>
   <script defer src="./js/app.js"></script>
 </body>
+
 </html>
