@@ -7,7 +7,6 @@ async function sendFormData() {
   const a = JSON.parse(o),
     e = new FormData();
   e.append("sheetName", "Lead"),
-  e.append("Ism", a.Ism),
   e.append("Telefon raqam", a.TelefonRaqam),
     e.append("Royhatdan o'tgan vaqti", a.SanaSoat);
   try {
