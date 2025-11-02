@@ -16,7 +16,6 @@ document.addEventListener("DOMContentLoaded", () => {
         img.classList.remove("blur-up");
       };
 
-      // (ixtiyoriy) xatolik bo‘lsa:
       highRes.onerror = () => {
         console.warn("Rasm yuklanmadi:", bigSrc);
       };
